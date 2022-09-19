@@ -1,3 +1,4 @@
+import java.util.UUID;
 
 class Calculator {
 
@@ -39,7 +40,12 @@ class Calculator {
     etc
      */
     int fibonacciNumberFinder(int n){
-        return 0;
+        if (n <= 1)
+            return n;
+
+        // Recursive call
+        return fibonacciNumberFinder(n - 1)
+                + fibonacciNumberFinder(n - 2);
     }
 
 
@@ -64,7 +70,7 @@ class Calculator {
      */
     String createUniqueID(String n){
 
-        return null;
+        return n + UUID.randomUUID();
     }
 
 
