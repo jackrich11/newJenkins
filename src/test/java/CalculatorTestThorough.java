@@ -63,9 +63,8 @@ public class CalculatorTestThorough {
                 myCalculator.divide(i, 0);
                 fail();
             }
-            catch (ArithmeticException e){
-                System.out.println(e.getMessage());
-                assertTrue(failureMessage.contains(e.getMessage()));
+            catch (ArithmeticException e) {
+                if(e.getMessage() != null) assertTrue(failureMessage.contains(e.getMessage()));
             }
         }
 
