@@ -1,7 +1,7 @@
 pipeline {
     environment {
 
-            registry = "jackrich/CalculatorApp"
+            registry = "jackrich/calculatorapp"
 
             registryCredential = 'dockerhub'
 
